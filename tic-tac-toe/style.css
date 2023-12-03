@@ -1,0 +1,47 @@
+* {
+  font-family: "Bungee", sans-serif;
+}
+
+#main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 35px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  box-shadow: 0 0 0 1px #333;
+  border: 1px solid #333;
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid #333;
+  margin-top: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#button--start {
+  display: none;
+}
+
+#button--start.show {
+  display: inline-block;
+}
